@@ -20,7 +20,7 @@
 
 
 <h2>Step-by-Step</h2>
-- 🟢 <b></b>Step 1: Configure LACP EtherChannel (ASW1 ↔ DSW1)</b>
+- 🟢 <b>Step 1: Configure LACP EtherChannel (ASW1 ↔ DSW1)</b>
 On ASW1
 
 Enter privileged mode:
