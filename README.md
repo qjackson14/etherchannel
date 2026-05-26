@@ -21,17 +21,16 @@
 
 <h2>Step-by-Step</h2>
 🟢 <b></b>Step 1: Configure LACP EtherChannel (ASW1 ↔ DSW1)</b>
-- On ASW1
-- Enter privileged mode:
-- enable
-
-- Enter global configuration:
-- conf t
-- Verify spanning tree:
-- show spanning-tree
-- Configure interfaces for EtherChannel:
-- interface range g0/1 - 2
-- channel-group 1 mode active
+ On ASW1
+ Enter privileged mode:
+ enable
+ Enter global configuration:
+ conf t
+ Verify spanning tree:
+ show spanning-tree
+ Configure interfaces for EtherChannel:
+ interface range g0/1 - 2
+ channel-group 1 mode active
 - Configure trunk on port-channel:
 - interface po1
 - switchport mode trunk
