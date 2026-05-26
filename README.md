@@ -31,36 +31,36 @@ enable
  Configure interfaces for EtherChannel:
  interface range g0/1 - 2
  channel-group 1 mode active
-- Configure trunk on port-channel:
-- interface po1
-- switchport mode trunk
-- Verify:
-- show etherchannel summary
-- show running-config
-- On DSW1
-- Enter configuration mode:
-- enable
-- conf t
-- Configure interfaces:
-- interface range g1/0/3 - 4
-- channel-group 1 mode active
-- Set trunk encapsulation and mode:
-- interface po1
-- switchport trunk encapsulation dot1q
-- switchport mode trunk
-- Verify:
-- show etherchannel summary
-- show interfaces trunk
+Configure trunk on port-channel:
+ interface po1
+ switchport mode trunk
+ Verify:
+ show etherchannel summary
+ show running-config
+ On DSW1
+ Enter configuration mode:
+ enable
+conf t
+ Configure interfaces:
+ interface range g1/0/3 - 4
+ channel-group 1 mode active
+ Set trunk encapsulation and mode:
+ interface po1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ Verify:
+ show etherchannel summary
+ show interfaces trunk
 - 🟢 <b>Step 2: Configure PAgP EtherChannel (ASW2 ↔ DSW2)</b>
-- On ASW2
-- Enter config mode:
-- enable
-- conf t
-- Configure interfaces:
-- interface range g0/1 - 2
-- channel-group 1 mode desirable
-- Configure trunk:
-- interface po1
+ On ASW2
+ Enter config mode:
+ enable
+ conf t
+ Configure interfaces:
+ interface range g0/1 - 2
+ channel-group 1 mode desirable
+ Configure trunk:
+ interface po1
 switchport mode trunk
 On DSW2
 
